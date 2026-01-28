@@ -1,17 +1,16 @@
-import TrainStatusCard from './components/TrainStatusCard';
+import Link from 'next/link';
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen items-center justify-center bg-gray-100 p-4">
-      <TrainStatusCard
-        trainNumber="12345"
-        trainName="Western Local"
-        source="Andheri"
-        destination="Churchgate"
-        delayMinutes={12}
-        eta="10:42 AM"
-        crowdLevel="HIGH"
-      />
+    <main className="min-h-screen flex flex-col items-center justify-center gap-4">
+      <h1 className="text-2xl font-bold">RailPulse</h1>
+
+      <Link
+        href="/trains"
+        className="rounded bg-black px-4 py-2 text-white"
+      >
+        Go to Trains
+      </Link>
     </main>
   );
 }
