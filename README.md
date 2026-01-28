@@ -85,4 +85,3 @@ MIT License
 ## Contributors
 
 Open for contributions and ideas to improve daily commuting experiences.
-lkjh
